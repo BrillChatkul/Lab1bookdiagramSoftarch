@@ -91,7 +91,7 @@ class Control{
 
 AbstractControl o-- Model
 AbstractControl o-- View
-class AbstractControl{
+abstract class AbstractControl{
     #model : Model
     #view : View
     #loader : ExtensionLoader
@@ -135,7 +135,7 @@ class MenuToolsControl{
     +options() : void
 }
 
-class FileXML{
+abstract class FileXML{
     #doc : Document
     #docBuilder : DocumentBuilder
     #docBuilderFactory : DocumentBuilderFactory
@@ -144,7 +144,7 @@ class FileXML{
     #getElment(base : Element, childTag : String) : Element[]
 }
 
-class AbstartParam{
+abstract class AbstartParam{
     -config : FileConfiguration
     +load(config : FileConfiguration) : void
     +load(fileName : String) : void
@@ -202,7 +202,7 @@ class View{
 
 }
 
-class ViewDelegate <<interface>>{
+interface ViewDelegate <<interface>>{
     +getMainFrame() : MainFrame;
     +getSiteTreePanel() : SiteMapPanel;
     +getOutputPanel() : OutputPanel;
