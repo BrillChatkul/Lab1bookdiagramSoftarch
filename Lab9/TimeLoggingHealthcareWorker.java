@@ -10,7 +10,8 @@ public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator{
 	@Override
 	public void service() {
 		java.util.Date date = new java.util.Date();
-		System.out.println(date+": "+this.getName() + " assists other healthcare professionals.");
+		System.out.print(date+": ");
+		this.worker.service();
 	}
 
 }
