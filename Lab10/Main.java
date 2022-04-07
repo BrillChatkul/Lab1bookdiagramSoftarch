@@ -6,14 +6,14 @@ public class Main {
         NewsPublisher brandInside = new NewsPublisher();
         NewsPublisher prachatai = new NewsPublisher();
 
-        NewsSubscriber parinya = new NewsSubscriber("Parinya");
+        NewsReader parinya = new NewsReader("Parinya");
         blognone.subscribe(parinya);
         prachatai.subscribe(parinya);
-        NewsSubscriber rome = new NewsSubscriber("Rangsiman");
+        NewsReader rome = new NewsReader("Rangsiman");
         prachatai.subscribe(rome);
-        NewsSubscriber mai = new NewsSubscriber("Sirikanya");
+        NewsReader mai = new NewsReader("Sirikanya");
         brandInside.subscribe(mai);
-        NewsSubscriber prawit = new NewsSubscriber("Prawit");
+        NewsReader prawit = new NewsReader("Prawit");
 
         News techNews = new TechnologyNews("A new security issue was found in Google Chrome.");
         News ecoNews = new EconomicNews("Fed raises interest rate by a half percentage.");

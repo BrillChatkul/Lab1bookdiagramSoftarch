@@ -19,7 +19,7 @@ public class NewsSubscriber implements Subscriber<News> {
 	@Override
 	public void onNext(News item) {
 		// TODO Auto-generated method stub
-		System.out.println(name+"get Content : "+item.getContent());
+		System.out.println(name+" get Content : "+item.getContent());
 	}
 
 	@Override
